@@ -1,0 +1,88 @@
+graph TB
+    subgraph "PRINCIPI FONDAMENTALI"
+        A[Clausius: Entropia Termodinamica]
+        B[Shannon/von Neumann: Entropia Informazione]
+        C[Jarzynski: Teorema del Lavoro]
+        D[Bekenstein: Bound Informazionale]
+        E[Landauer: Principio Cancellazione]
+    end
+    
+    subgraph "POSTULATI P.A.I.M."
+        P1[P1: Sistema Fisico]
+        P2[P2: Informazione Strutturale]
+        P3[P3: Azione Informazionale Minima]
+        P4[P4: Evoluzione Universale]
+        P5[P5: Astrazione Non-Locale]
+    end
+    
+    subgraph "DERIVAZIONI CHIAVE"
+        D1[Entropia Hawking]
+        D2[Page Curve]
+        D3[Volume Quantistico]
+        D4[Evoluzione Biologica]
+        D5[Modello Coscienza]
+    end
+    
+    subgraph "DOMINI APPLICATIVI"
+        DOM1[Buchi Neri]
+        DOM2[Sistemi Quantistici]
+        DOM3[Biologia/Evoluzione]
+        DOM4[Neuroscienze/Coscienza]
+        DOM5[Cosmologia]
+        DOM6[Economia]
+    end
+    
+    subgraph "VALIDAZIONE SPERIMENTALE"
+        V1[GWTC-3: Onde Gravitazionali]
+        V2[Google Sycamore: 53-qubit]
+        V3[T2K: Neutrini CP]
+        V4[fMRI: Correlazioni Neurali]
+        V5[SPHEREx: IR Background]
+        V6[GEOCARB: Dati Fossili]
+    end
+    
+    %% Connessioni principi → postulati
+    A --> P2
+    B --> P2
+    C --> P3
+    D --> P2
+    E --> P3
+    
+    %% Connessioni postulati → derivazioni
+    P1 --> D1
+    P2 --> D1
+    P2 --> D2
+    P3 --> D3
+    P4 --> D4
+    P5 --> D5
+    
+    %% Connessioni derivazioni → domini
+    D1 --> DOM1
+    D2 --> DOM1
+    D3 --> DOM2
+    D4 --> DOM3
+    D5 --> DOM4
+    P2 --> DOM5
+    P4 --> DOM6
+    
+    %% Connessioni domini → validazione
+    DOM1 --> V1
+    DOM2 --> V2
+    DOM3 --> V3
+    DOM4 --> V4
+    DOM5 --> V5
+    DOM6 --> V6
+    
+    %% Stili
+    classDef principi fill:#e1f5fe
+    classDef postulati fill:#f3e5f5
+    classDef derivazioni fill:#e8f5e8
+    classDef domini fill:#fff3e0
+    classDef validazione fill:#ffebee
+    
+    class A,B,C,D,E principi
+    class P1,P2,P3,P4,P5 postulati
+    class D1,D2,D3,D4,D5 derivazioni
+    class DOM1,DOM2,DOM3,DOM4,DOM5,DOM6 domini
+    class V1,V2,V3,V4,V5,V6 validazione
+
